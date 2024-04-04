@@ -1,0 +1,34 @@
+{
+  "name": "commitm/money-doctrine",
+  "description": "Doctrine Money type",
+  "type": "project",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "authors": [
+    {
+      "name": "Michał Materniak"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/michalmaterniak/money"
+    }
+  ],
+  "require": {
+    "php": "~8.3.0",
+    "symfony/var-dumper": "v7.0.*",
+    "doctrine/orm": "3.1.1",
+    "commitm/money": "0.0.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "MoneyDoctrine\\": "src/",
+      "Test\\MoneyDoctrine\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "11.0.*"
+  }
+}
